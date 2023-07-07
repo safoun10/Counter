@@ -1,8 +1,10 @@
 /* eslint-disable no-unused-vars */
 import { useState } from "react";
+import "./Counter.css";
 
 const Counter = () => {
 	const [num, setNum] = useState(0);
+	const [none, setNone] = useState(false);
 
 	const addNum = () => {
 		setNum(num + 1);
@@ -16,9 +18,16 @@ const Counter = () => {
 		setNum(0);
 	};
 
+	const handleNone = () => {
+		setNone(true);
+	};
+
 	return (
 		<div>
-			<div className="counter">
+			<div className={none ? "d-none counter" : "counter"}>
+				<div onClick={handleNone} className="x">
+					x
+				</div>
 				<div className="counter-name">tally counter</div>
 
 				<div className="input-style">
@@ -34,7 +43,9 @@ const Counter = () => {
 					</button>
 				</div>
 				<div className="btn-group">
-					<button onClick={resetNum} className="btn">Reset counter</button>
+					<button onClick={resetNum} className="btn">
+						Reset counter
+					</button>
 					<button className="btn">Start value</button>
 					<button className="btn">Rename</button>
 				</div>

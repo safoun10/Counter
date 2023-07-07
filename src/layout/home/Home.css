@@ -2,7 +2,7 @@
 	width: 100%;
 	min-height: 60vh;
 	display: flex;
-	gap: 50px;
+	gap: 5px;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
@@ -83,4 +83,5 @@
 	padding: 10px;
 	margin: 0 auto;
 	margin-bottom: 25px;
+	user-select: none;
 }

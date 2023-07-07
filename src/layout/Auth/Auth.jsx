@@ -6,7 +6,7 @@ const Auth = () => {
 	return (
 		<div className="page">
 			<div className="auth-head">
-				Please Login / Register before going to Counter Page
+				Please Login before going to Counter Page
 			</div>
 			<div className="auth-section">
 				<div className="column">

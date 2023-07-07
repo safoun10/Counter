@@ -1,0 +1,15 @@
+.x{
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    position: relative;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.d-none{
+    display: none !important;
+}
